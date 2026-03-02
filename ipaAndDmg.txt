@@ -1,0 +1,45 @@
+// ------------ IPA ------------
+
+
+
+# Build (no signing)
+xcodebuild \
+  -project yuhanime.xcodeproj \
+  -scheme yuhanime_iOS \
+  -destination 'generic/platform=iOS' \
+  -configuration Release \
+  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
+  CONFIGURATION_BUILD_DIR=build/app \
+  build
+
+# Create IPA with correct permissions
+rm -rf build/Payload
+mkdir -p build/Payload
+ditto build/app/yuhanime.app build/Payload/yuhanime.app
+chmod -R 755 build/Payload/yuhanime.app
+chmod +x build/Payload/yuhanime.app/yuhanime
+
+cd build && zip -r yuhanime.ipa Payload/ && cd ..
+
+
+
+
+
+// ------------ DMG ------------
+
+
+
+# Step 1: Build and archive
+xcodebuild -project yuhanime.xcodeproj -scheme yuhanime_macOS \
+  -destination 'platform=macOS' -configuration Release \
+  -archivePath build/yuhanime-mac.xcarchive \
+  CODE_SIGN_IDENTITY="-" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
+  archive
+
+# Step 2: Create the DMG 
+mkdir -p build/dmg-staging && \
+cp -R build/yuhanime-mac.xcarchive/Products/Applications/yuhanime.app build/dmg-staging/ && \
+ln -sf /Applications build/dmg-staging/Applications && \
+hdiutil create -volname "yuhanime" -srcfolder build/dmg-staging \
+  -ov -format UDZO build/yuhanime.dmg && \
+rm -rf build/dmg-staging
