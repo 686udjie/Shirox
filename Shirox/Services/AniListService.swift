@@ -51,7 +51,7 @@ final class AniListService {
         let query = """
         query ($search: String) {
           Page(page: 1, perPage: 25) {
-            media(search: $search, type: ANIME, sort: SEARCH_MATCH) {
+            media(search: $search, type: ANIME, sort: SEARCH_MATCH, isAdult: false) {
               id
               title { romaji english native }
               coverImage { large extraLarge }
@@ -69,7 +69,7 @@ final class AniListService {
         let query = """
         query {
           Page(page: 1, perPage: 20) {
-            media(type: ANIME, sort: TRENDING_DESC) {
+            media(type: ANIME, sort: TRENDING_DESC, isAdult: false) {
               id
               title { romaji english native }
               coverImage { large extraLarge }
@@ -88,7 +88,7 @@ final class AniListService {
         let query = """
         query ($season: MediaSeason, $year: Int) {
           Page(page: 1, perPage: 20) {
-            media(season: $season, seasonYear: $year, type: ANIME, sort: POPULARITY_DESC) {
+            media(season: $season, seasonYear: $year, type: ANIME, sort: POPULARITY_DESC, isAdult: false) {
               id
               title { romaji english native }
               coverImage { large extraLarge }
@@ -106,7 +106,7 @@ final class AniListService {
         let query = """
         query {
           Page(page: 1, perPage: 20) {
-            media(type: ANIME, sort: POPULARITY_DESC) {
+            media(type: ANIME, sort: POPULARITY_DESC, isAdult: false) {
               id
               title { romaji english native }
               coverImage { large extraLarge }
@@ -124,7 +124,7 @@ final class AniListService {
         let query = """
         query {
           Page(page: 1, perPage: 20) {
-            media(type: ANIME, sort: SCORE_DESC) {
+            media(type: ANIME, sort: SCORE_DESC, isAdult: false) {
               id
               title { romaji english native }
               coverImage { large extraLarge }
@@ -141,7 +141,7 @@ final class AniListService {
     func detail(id: Int) async throws -> AniListMedia {
         let query = """
         query ($id: Int) {
-          Media(id: $id, type: ANIME) {
+          Media(id: $id, type: ANIME, isAdult: false) {
             id
             title { romaji english native }
             coverImage { large extraLarge }

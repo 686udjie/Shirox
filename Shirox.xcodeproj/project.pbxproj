@@ -13,6 +13,7 @@
 		146793D866B95C4614279637 /* AnimeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63F1849AA2515C53BE08A22 /* AnimeCardView.swift */; };
 		14D95DE7E0629E2595DDD83C /* JSEngine+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60FE2CBD595A40B9E50E4D1 /* JSEngine+Search.swift */; };
 		19E7B08A32AAA6CC5F5A91B7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB52C5F226579CA37CC9E5 /* SearchViewModel.swift */; };
+		1C2F1DA4C30DB8F46405C768 /* WatchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDFD568A3E8F21EA674244C /* WatchHistoryService.swift */; };
 		1E7F1EA26D78D5F7FDF3B6DD /* JSEngine+Streams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51053A55A3C1D2682EB7719D /* JSEngine+Streams.swift */; };
 		222F85E214054D8A05316CF9 /* JSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADDEA3748C5AE8D3C1A3CD /* JSEngine.swift */; };
 		25718B355004C8AD7E4A215E /* AniListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3FBB9F1A9B237743F4808C /* AniListService.swift */; };
@@ -66,6 +67,7 @@
 		D16E18BD46A2A5ABA035EFF3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB2ACC14C82E1EC1E47DC2E /* HomeViewModel.swift */; };
 		E2A6544D9407734FABCFD57D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA5105668982AD0021041F /* SearchView.swift */; };
 		EA5B1C17081C02D59196F61C /* ModuleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330313A7F7AB1EF362097130 /* ModuleListView.swift */; };
+		EADD7BDDF8A641980A2CFE35 /* WatchHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDFD568A3E8F21EA674244C /* WatchHistoryService.swift */; };
 		F971C44DD8C1F3918A3CE985 /* StreamPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D2B9F954BF05330758E81 /* StreamPickerView.swift */; };
 		F9E24C2C4FF74E1EAC5BFD9B /* NetworkFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45F91C732C2601421713C8 /* NetworkFetch.swift */; };
 		FAFF9AA00DEB80103E5C7F76 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3B8F080E9AF4E269AEC3DA /* WebKit.framework */; };
@@ -88,6 +90,7 @@
 		520D2B9F954BF05330758E81 /* StreamPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamPickerView.swift; sourceTree = "<group>"; };
 		5C20E69AFCB9F0507E969ECF /* AniListMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AniListMedia.swift; sourceTree = "<group>"; };
 		5E45F91C732C2601421713C8 /* NetworkFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetch.swift; sourceTree = "<group>"; };
+		6DDFD568A3E8F21EA674244C /* WatchHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHistoryService.swift; sourceTree = "<group>"; };
 		8DB2ACC14C82E1EC1E47DC2E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A60FE2CBD595A40B9E50E4D1 /* JSEngine+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSEngine+Search.swift"; sourceTree = "<group>"; };
 		AB7865FCF14B6C0E49BCD85B /* AniListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AniListDetailView.swift; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 				2B9D9A88BECF75FEF1BA4E1D /* ModuleJSRunner.swift */,
 				FA54E15EA936A28D42B73886 /* ModuleManager.swift */,
 				5E45F91C732C2601421713C8 /* NetworkFetch.swift */,
+				6DDFD568A3E8F21EA674244C /* WatchHistoryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -343,6 +347,7 @@
 				2FFDB0F7AE21B9B527B83D18 /* ShiroxApp.swift in Sources */,
 				5E26E175DA01C9A81ADEDDCB /* StreamPickerView.swift in Sources */,
 				FFEA54B867C75F75B46DD67F /* StreamResult.swift in Sources */,
+				1C2F1DA4C30DB8F46405C768 /* WatchHistoryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +385,7 @@
 				3A42CE0D50F5B4711F556C97 /* ShiroxApp.swift in Sources */,
 				F971C44DD8C1F3918A3CE985 /* StreamPickerView.swift in Sources */,
 				25CE71961C1EBBEE80BEDB25 /* StreamResult.swift in Sources */,
+				EADD7BDDF8A641980A2CFE35 /* WatchHistoryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

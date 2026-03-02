@@ -78,6 +78,11 @@
     "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/NetworkFetch.bc",
     "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/NetworkFetch.o"
   },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/WatchHistoryService.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/WatchHistoryService.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/WatchHistoryService.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/WatchHistoryService.o"
+  },
   "/Users/ibrahim/Documents/Code/Shirox/Shirox/ShiroxApp.swift" : {
     "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ShiroxApp.o",
     "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ShiroxApp.bc",
