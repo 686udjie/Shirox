@@ -45,9 +45,9 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Discover")
-            #if os(iOS)
-            .navigationBarTitleDisplayMode(.inline)
-            #endif
+            // #if os(iOS)
+            // .navigationBarTitleDisplayMode(.inline)
+            // #endif
         }
         .task { await vm.load() }
         .onAppear {

@@ -1,0 +1,161 @@
+{
+  "" : {
+    "const-values" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary.swiftconstvalues",
+    "dependencies" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary.d",
+    "diagnostics" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary.dia",
+    "emit-module-dependencies" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary-emit-module.dia",
+    "pch" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary.swiftdeps"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Models/AniListMedia.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListMedia.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListMedia.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListMedia.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Models/EpisodeLink.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/EpisodeLink.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/EpisodeLink.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/EpisodeLink.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Models/MediaDetail.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/MediaDetail.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/MediaDetail.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/MediaDetail.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Models/ModuleDefinition.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleDefinition.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleDefinition.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleDefinition.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Models/SearchItem.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchItem.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchItem.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchItem.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Models/StreamResult.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/StreamResult.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/StreamResult.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/StreamResult.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/AniListService.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListService.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListService.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListService.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/JSEngine+Details.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Details.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Details.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Details.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/JSEngine+Search.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Search.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Search.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Search.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/JSEngine+Streams.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Streams.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Streams.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine+Streams.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/JSEngine.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/JSEngine.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/ModuleJSRunner.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleJSRunner.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleJSRunner.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleJSRunner.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/ModuleManager.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleManager.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleManager.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleManager.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Services/NetworkFetch.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/NetworkFetch.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/NetworkFetch.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/NetworkFetch.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/ShiroxApp.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ShiroxApp.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ShiroxApp.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ShiroxApp.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/ViewModels/AniListDetailViewModel.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListDetailViewModel.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListDetailViewModel.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListDetailViewModel.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/ViewModels/DetailViewModel.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/DetailViewModel.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/DetailViewModel.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/DetailViewModel.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/ViewModels/HomeViewModel.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/HomeViewModel.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/HomeViewModel.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/HomeViewModel.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/ViewModels/SearchViewModel.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchViewModel.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchViewModel.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchViewModel.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/AniListDetailView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListDetailView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListDetailView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AniListDetailView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/AnimeCardView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AnimeCardView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AnimeCardView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/AnimeCardView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/DetailView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/DetailView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/DetailView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/DetailView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/EpisodeRowView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/EpisodeRowView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/EpisodeRowView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/EpisodeRowView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/HomeView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/HomeView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/ModuleListView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleListView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleListView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleListView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/ModuleStreamPickerView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleStreamPickerView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleStreamPickerView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/ModuleStreamPickerView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/PlayerView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/PlayerView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/PlayerView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/PlayerView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/SearchView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SearchView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/SettingsView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/StreamPickerView.swift" : {
+    "index-unit-output-path" : "/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/StreamPickerView.o",
+    "llvm-bc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/StreamPickerView.bc",
+    "object" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/StreamPickerView.o"
+  }
+}

@@ -263,19 +263,16 @@ struct PlayerContainer: UIViewControllerRepresentable {
 
     func makeUIViewController(context: Context) -> UIViewController {
         let forceLandscape = UserDefaults.standard.bool(forKey: "forceLandscape")
-
-        if forceLandscape {
-            OrientationManager.lockOrientation(.landscape, andRotateTo: .landscapeRight)
-        } else {
-            OrientationManager.lockOrientation(.allButUpsideDown)
-        }
+        let orientationMask: UIInterfaceOrientationMask = forceLandscape ? .landscape : .allButUpsideDown
+        OrientationManager.lockOrientation(orientationMask)
 
         let controller = PlayerHostingController(
             rootView: PlayerView(stream: stream, customDismiss: {
                 context.coordinator.dismissPlayer()
             })
         )
-        controller.allowedOrientations = forceLandscape ? .landscape : .allButUpsideDown
+        controller.allowedOrientations = orientationMask
+        controller.preferredOrientation = forceLandscape ? .landscapeRight : nil
         controller.view.backgroundColor = .black
         return controller
     }
@@ -292,7 +289,8 @@ struct PlayerContainer: UIViewControllerRepresentable {
             self.dismiss = dismiss
         }
         func dismissPlayer() {
-            OrientationManager.lockOrientation(.portrait, andRotateTo: .portrait)
+            OrientationManager.lockOrientation(.portrait)
+            OrientationManager.requestRotation(to: .portrait)
             dismiss()
         }
     }
@@ -300,9 +298,17 @@ struct PlayerContainer: UIViewControllerRepresentable {
 
 class PlayerHostingController<Content: View>: UIHostingController<Content> {
     var allowedOrientations: UIInterfaceOrientationMask = .allButUpsideDown
+    var preferredOrientation: UIInterfaceOrientationMask? = nil
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return allowedOrientations
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { allowedOrientations }
+    override var shouldAutorotate: Bool { true }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsUpdateOfSupportedInterfaceOrientations()
+        if let preferred = preferredOrientation, let scene = view.window?.windowScene {
+            scene.requestGeometryUpdate(.iOS(interfaceOrientations: preferred)) { _ in }
+        }
     }
 }
 #endif

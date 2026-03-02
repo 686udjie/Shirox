@@ -71,7 +71,7 @@ struct SearchView: View {
                     }
                 }
             }
-            .navigationTitle("Yuhanime")
+            .navigationTitle("Shirox")
             .searchable(text: $vm.query, prompt: "Search anime…")
             .onSubmit(of: .search) {
                 vm.search(usingModule: usingModule)

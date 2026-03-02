@@ -1,0 +1,12 @@
+{
+  "/Users/ibrahim/Documents/Code/Shirox/Shirox/Views/AniListDetailView.swift" : {
+    "abi-baseline-json" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox.abi.json",
+    "const-values" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary.swiftconstvalues",
+    "dependencies" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary.d",
+    "diagnostics" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox_iOS-primary.dia",
+    "objc-header" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox-Swift.h",
+    "swiftdoc" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox.swiftdoc",
+    "swiftmodule" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox.swiftmodule",
+    "swiftsourceinfo" : "/Users/ibrahim/Documents/Code/Shirox/build/Shirox.build/Release-iphoneos/Shirox_iOS.build/Objects-normal/arm64/Shirox.swiftsourceinfo"
+  }
+}

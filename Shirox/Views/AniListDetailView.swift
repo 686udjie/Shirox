@@ -136,20 +136,22 @@ private func heroSection(media: AniListMedia) -> some View {
                 )
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
 
-                // Poster
-                AsyncImage(url: URL(string: media.coverImage.best ?? "")) { phase in
-                    switch phase {
-                    case .success(let img):
-                        img.resizable().aspectRatio(contentMode: .fill)
-                    default:
-                        Rectangle().fill(Color.gray.opacity(0.3))
+                // Poster — only when a distinct banner is present
+                if media.bannerImage != nil {
+                    AsyncImage(url: URL(string: media.coverImage.best ?? "")) { phase in
+                        switch phase {
+                        case .success(let img):
+                            img.resizable().aspectRatio(contentMode: .fill)
+                        default:
+                            Rectangle().fill(Color.gray.opacity(0.3))
+                        }
                     }
+                    .frame(width: 90, height: 135)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .shadow(radius: 8)
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 12)
                 }
-                .frame(width: 90, height: 135)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-                .shadow(radius: 8)
-                .padding(.horizontal, 16)
-                .padding(.bottom, 12)
             }
         )
         .clipped()

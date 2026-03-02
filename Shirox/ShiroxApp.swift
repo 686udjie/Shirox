@@ -10,13 +10,10 @@ final class OrientationManager {
         }
     }
 
-    static func lockOrientation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation: UIInterfaceOrientation) {
+    static func requestRotation(to orientation: UIInterfaceOrientationMask) {
         guard UIDevice.current.userInterfaceIdiom == .phone else { return }
-        lockOrientation(orientation)
-        UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
-        DispatchQueue.main.async {
-            UIViewController.attemptRotationToDeviceOrientation()
-        }
+        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+        scene.requestGeometryUpdate(.iOS(interfaceOrientations: orientation)) { _ in }
     }
 }
 
