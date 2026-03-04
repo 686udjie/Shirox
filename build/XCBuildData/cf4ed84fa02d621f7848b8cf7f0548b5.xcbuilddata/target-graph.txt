@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'Shirox_iOS' in project 'Shirox' (no dependencies)
