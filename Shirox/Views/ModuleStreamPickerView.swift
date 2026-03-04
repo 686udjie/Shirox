@@ -157,7 +157,7 @@ private struct ModuleStreamRow: View {
             stateContent
         }
         .padding(.vertical, 6)
-        .onChange(of: rowVm.readyStreams) { streams in
+        .onChange(of: rowVm.readyStreams) { _, streams in
             guard let streams else { return }
             onStreamsLoaded(streams)
         }

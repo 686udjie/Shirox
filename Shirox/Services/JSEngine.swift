@@ -1,5 +1,5 @@
 import Foundation
-import JavaScriptCore
+@preconcurrency import JavaScriptCore
 
 @MainActor
 final class JSEngine: ObservableObject {
@@ -129,30 +129,23 @@ final class JSEngine: ObservableObject {
 
             let ctx = self.context
 
-            self.session.dataTask(with: request) { data, response, error in
-                if let error {
-                    DispatchQueue.main.async {
-                        reject.call(withArguments: [error.localizedDescription])
-                    }
-                    return
-                }
-                guard let data, let httpResponse = response as? HTTPURLResponse else {
-                    DispatchQueue.main.async {
+            Task {
+                do {
+                    let (data, response) = try await self.session.data(for: request)
+                    guard let httpResponse = response as? HTTPURLResponse else {
                         reject.call(withArguments: ["No response data"])
+                        return
                     }
-                    return
-                }
 
-                let responseText = String(data: data, encoding: .utf8) ?? ""
-                let status = httpResponse.statusCode
+                    let responseText = String(data: data, encoding: .utf8) ?? ""
+                    let status = httpResponse.statusCode
 
-                // Build headers dict
-                var headersDict: [String: String] = [:]
-                for (key, value) in httpResponse.allHeaderFields {
-                    headersDict[String(describing: key)] = String(describing: value)
-                }
+                    // Build headers dict
+                    var headersDict: [String: String] = [:]
+                    for (key, value) in httpResponse.allHeaderFields {
+                        headersDict[String(describing: key)] = String(describing: value)
+                    }
 
-                DispatchQueue.main.async {
                     let responseObj = JSValue(newObjectIn: ctx)!
                     responseObj.setValue(status, forProperty: "status")
                     responseObj.setValue(status >= 200 && status < 300, forProperty: "ok")
@@ -171,8 +164,10 @@ final class JSEngine: ObservableObject {
                     responseObj.setObject(jsonFn, forKeyedSubscript: "json" as NSString)
 
                     resolve.call(withArguments: [responseObj])
+                } catch {
+                    reject.call(withArguments: [error.localizedDescription])
                 }
-            }.resume()
+            }
         }
 
         context.setObject(fetchNative, forKeyedSubscript: "fetchv2Native" as NSString)

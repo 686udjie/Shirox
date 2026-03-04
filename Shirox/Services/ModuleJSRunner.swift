@@ -1,5 +1,5 @@
 import Foundation
-import JavaScriptCore
+@preconcurrency import JavaScriptCore
 
 /// A short-lived, standalone JS runner for a single module.
 /// Creates its own JSContext so it never interferes with JSEngine.shared.
@@ -214,24 +214,21 @@ final class ModuleJSRunner {
                 request.httpBody = bodyData
             }
 
-            self.session.dataTask(with: request) { data, response, error in
-                if let error {
-                    DispatchQueue.main.async { reject.call(withArguments: [error.localizedDescription]) }
-                    return
-                }
-                guard let data, let httpResponse = response as? HTTPURLResponse else {
-                    DispatchQueue.main.async { reject.call(withArguments: ["No response data"]) }
-                    return
-                }
+            Task {
+                do {
+                    let (data, response) = try await self.session.data(for: request)
+                    guard let httpResponse = response as? HTTPURLResponse else {
+                        reject.call(withArguments: ["No response data"])
+                        return
+                    }
 
-                let responseText = String(data: data, encoding: .utf8) ?? ""
-                let status = httpResponse.statusCode
-                var headersDict: [String: String] = [:]
-                for (key, value) in httpResponse.allHeaderFields {
-                    headersDict[String(describing: key)] = String(describing: value)
-                }
+                    let responseText = String(data: data, encoding: .utf8) ?? ""
+                    let status = httpResponse.statusCode
+                    var headersDict: [String: String] = [:]
+                    for (key, value) in httpResponse.allHeaderFields {
+                        headersDict[String(describing: key)] = String(describing: value)
+                    }
 
-                DispatchQueue.main.async {
                     let responseObj = JSValue(newObjectIn: ctx)!
                     responseObj.setValue(status, forProperty: "status")
                     responseObj.setValue(status >= 200 && status < 300, forProperty: "ok")
@@ -248,8 +245,10 @@ final class ModuleJSRunner {
                     responseObj.setObject(jsonFn, forKeyedSubscript: "json" as NSString)
 
                     resolve.call(withArguments: [responseObj])
+                } catch {
+                    reject.call(withArguments: [error.localizedDescription])
                 }
-            }.resume()
+            }
         }
 
         ctx.setObject(fetchNative, forKeyedSubscript: "fetchv2Native" as NSString)
